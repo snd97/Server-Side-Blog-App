@@ -1,0 +1,247 @@
+/* target the body and set the background colour to white, set the font family to Roboto */
+body{
+    margin: 0;
+    background-color:rgb(255, 255, 255);    
+    font-family: 'Roboto', serif;  
+
+}
+
+#wrapper {
+    width: 80%;
+  /*center the wrapper*/
+    margin: auto;
+/*set the background colour to a light pink. add a slight box shadow*/
+    background-color:rgb(248, 240, 240);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    margin-bottom:-20px;
+}
+/*LOGIN PAGE*/
+/*target the login form div and fix its position to the center of the screen*/
+#login {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display:flex;
+}
+
+#login {
+/*center the content in form div */
+  justify-content: center;
+  width: 50%;
+  background-color: rgb(255, 255, 255);
+/*give the box rounded corners and a slight shadow*/
+  border-radius:10px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  padding: 40px 5px; 
+}
+#login form{  
+  text-align:left;
+  margin-top:20px; 
+}
+/*target the inputs for email and password and style them nicely*/
+#login input{
+    width: 300;
+}
+#login #email{
+  margin-left:42px;
+}
+#login #password{
+  margin-left:10px;
+}
+#login input[type=submit]{
+  margin-left:310px;
+  width:20%;
+
+}
+/*when user hovers over an input box add a box shadow*/
+#login input:hover {
+  box-shadow: 0 4px 6px 0 rgba(0,0,0,0.2);
+}
+
+/*ADMIN DASHBOARD*/
+/*center the nav elements*/
+nav{
+    margin: 0;
+    text-align: center;
+    padding-top:5px;
+    padding-bottom: 70px;
+    margin-bottom:0px;
+    max-width: 100%;
+/*set the backgorund colour for the nav bar to red*/
+    background-color:rgb(155, 51, 51);  
+
+}
+/*center the list and take away the default bullet points*/
+ul{
+  justify-content: center; 
+  list-style-type: none;  
+
+}
+/*take away the text decoration on the links*/
+a{
+  text-decoration: none;
+}
+/*set the colour of links to red*/
+a:link {
+    color: #9b0031;    
+  }
+
+/*set the colour of the link to dark red for visited links*/
+a:visited {
+    color: #9b0031;
+  }
+/*set the colour of links for hover, active and focus states to black*/
+a:hover, a:active, a:focus {
+    color: #050504;
+  } 
+nav a{
+/*override the red link colour and set the nav links to white*/
+    color: rgb(255, 255, 255);
+    font-size: 1.4em;
+/*set the font-family to raleway*/
+    font-family: 'Raleway', sans-serif;
+/*set the width of each link to 25% as there are 4 links and this displays them equally across the nav bar*/
+    width: 24%;
+/*add some top and bottom padding for design purposes and also some extra margin at the bottom*/
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-bottom: 0px;
+/*spread links evenly across the page using float:left*/
+    float: left;
+/*set the colour of the links to black and weight to 400*/
+    font-weight:400;  
+
+}
+/*set colour of nav links to white*/
+nav a:link{
+  color: #ffffff;
+}
+nav a:visited{
+  color: #ffffff;
+}
+/*set colour of nav links to orange when active, focuses or mouse hovers over them*/
+nav a:hover, nav a:active,nav a:focus {
+  color: #dda338;
+} 
+
+/*center the welcome message*/
+h1{
+    text-align:center;
+    margin-bottom:50px;
+    margin-top:20px;
+}
+/*center the h2 on admin page*/
+.admin{  
+  text-align:center;
+/*override the h2 margin-left for the h2 on admin page*/
+  margin-left:-50px;
+}
+/*center the container with all blogs*/
+#allblogsContainers{
+  max-width:100%;
+  margin:auto;
+/*define the container as a flex container and allow flex wrap*/ 
+  display:flex;
+  flex-wrap:wrap;
+/*center the content*/
+  justify-content: center;  
+}
+/*limit the width of each blog post to 300px*/
+#blogContainer{
+  display:inline-block;
+  max-width:300px;
+/*set the background colour to white and add box shadow*/
+  background-color:rgb(251, 251, 251);
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  margin: 20px 10px 5px 10px;
+  padding:20px;
+
+}
+#blogContainer:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+
+/*UPDATE POST AND CREATE POST PAGE*/
+/*set width to 80%, center it and add white background*/ 
+#editForm, #createPost{
+width: 80%; 
+margin: 0 auto;
+box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+background-color:rgb(255, 255, 255);
+
+}
+/*add padding to form*/
+#editForm form, #createPost form{
+  padding-left:50px;
+  padding-bottom:50px;
+}
+/*set the colour of the p tage to red -  for user feedback*/
+p{
+  margin-left:50px;
+  color:rgb(243, 34, 34)
+}
+/*overrides the p tag colour and margin to black for the blog container on dashboard*/
+#blogContainer p{
+  margin-left:0px;
+  color:black;
+}
+/*set the colour of the publish post button to pink*/
+#createPost .button{
+  font-size:1em;
+  background-color:rgb(250, 184, 198);
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.2);
+}
+/*change colour of button when mouse hovers over it*/
+#createPost .button:hover{
+  background-color:rgb(255, 225, 231);
+}
+
+/*add some padding for the h2 elements */
+h2{
+  padding-left:50px;
+  padding-top:20px;
+}
+/*set text are to 80% width*/
+textarea{
+  width:80%;
+  margin-left: 0px;
+}
+/*set the input width to 50%*/
+#editForm input, #createPost input {    
+  width:50%; 
+}
+/*set background colour of update post button to pink*/
+#editForm input[type=submit]{
+  background-color:rgb(250, 184, 198);
+  font-size:1em;
+/*override the width of inputs to 20% for the buttons*/
+  width:20%; 
+}
+/*set background colour of delete button to grey to diferentiate the buttons*/
+#editForm #delete{
+  background-color:rgb(207, 205, 206);
+}
+/*change colours when hovering*/
+#editForm input[type=submit]:hover{
+  background-color: rgb(255, 225, 231);
+  cursor: pointer;
+}
+#editForm #delete:hover{
+  background-color:rgb(243, 231, 237);
+}
+/*set colour of footer background to red*/
+footer{
+  margin-top:20px;
+  padding-top:10px;
+  padding-bottom:10px;
+  background-color: rgb(155, 51, 51);
+  
+  
+}
+/*target the p tag in the footer and set the colour to white*/
+footer p{
+  margin-left:20px;
+  color:white;
+}
+

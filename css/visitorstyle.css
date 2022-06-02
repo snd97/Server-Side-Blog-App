@@ -1,0 +1,126 @@
+/* target the body and set the background colour to white, set the font family to Roboto */
+body{
+    margin: 0;
+    background-color:rgb(241, 241, 241);
+    font-family: 'Roboto', serif;
+}
+/*target the wrapper, center it and set the width to 80%*/
+#wrapper {
+    width: 80%;
+  /*center the wrapper*/
+    margin: auto;
+/*set the background colour to a light pink. add a slight box shadow*/
+    background-color:rgb(246, 244, 244);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+/*target the h1 and put it in the center of the page. add some margin to the top for extra space*/
+h1{
+    margin-top:50px;
+    text-align:center;
+}
+/*float the h2 elements to the left and add some extra space above and to the left*/
+h2 {
+    float:left;
+    margin-top:20px;
+    margin-left: 20px;
+/*set the font family to*/
+    font-family: 'Raleway', sans-serif;
+  
+}
+/*set the background colour of the header to a light pink and add a lblack border to the bottom*/
+header{
+    background-color: rgb(255, 245, 245);
+    border-bottom: 2px solid rgb(0, 0, 0);
+
+    
+}
+/*take away any text decoration on the links*/
+a{
+    text-decoration: none;
+/*target the links in the h2 and give them a background colour and box shadow*/   
+}
+h2 a {
+    background-color:rgb(251, 225, 225);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-width:1px;
+    padding:10px;
+/*separate the links by adding some margin to the right*/
+    margin-right:10px;
+}
+/*set the colour of the links to black*/
+a{
+    color:black;
+}
+/* when user hovers or focuses on a link, make it an orange colour */
+ a:hover, a:active, a:focus {
+    color: #dda338;
+}
+
+/*center the container with all blogs*/
+#allblogsContainers{
+    max-width:100%;
+    margin:auto;
+/*define the container as a flex container and allow flex wrap*/ 
+    display:flex;
+    flex-wrap:wrap;
+/*center the content*/
+    justify-content: center;  
+}
+/* target the individual blog containers and make them inline block and set a max width for each to 300px */
+#blogContainer{
+    display:inline-block;
+    max-width:300px;
+    background-color:rgb(251, 251, 251);
+/*give them all a box shadow and add extra space around them*/
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    margin: 20px 10px 5px 10px;
+/*add some padding arounf all edges*/
+    padding:20px;
+
+}
+
+#blogContainer:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+/*add some extra space below the hero image*/
+#hero{
+    margin-bottom:10px;
+ }
+  /*target the hero image and set the max-width to 100%. this will make it responsive as the browser is scaled up or down*/
+#hero img {
+    max-width: 100%;
+    }
+/*target the blogs page containers and set background colour to white and add some padding inside*/
+#blogpostContainer{
+        background-color: rgb(255, 255, 255);
+        padding:50px;
+    }
+/*target the image on these blog post pages and ensure its always centered and flex wrapped */
+#posthero{
+        display:flex;
+        flex-wrap:wrap;
+    /*center the content*/
+        justify-content: center;  
+    }
+/*set the max wdth of the image to 500px*/
+#posthero img{
+    max-width:500px;
+    text-align:center;
+
+}
+/*increase the size of the line height to make it more readable...*/
+#maintext{
+    line-height: 1.6;
+}
+/*set colour of footer to dark red and the text colour to white*/
+footer{
+    margin-top:20px;
+    padding-top:10px;
+    padding-bottom:20px;
+    background-color: rgb(155, 51, 51);
+    color:white;
+}
+
+    footer p{
+        margin-left:20px;
+    }
